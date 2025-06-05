@@ -1,0 +1,33 @@
+custom:
+  config:
+    prop1: str1_yml
+    ## List<String>
+    prop3:
+      - list0_yml
+      - list1_yml
+      - list2_yml
+    ## Map<String,String>
+    prop4:
+      key1: yaml_val1
+      key2: yaml_val2
+      key3: val3
+      key4: val4
+    ## POJO:
+    prop5:
+      prop1: nested_str1_yaml
+      ## nested List<String>
+      prop3:
+        - str21_yaml
+        - str22_yaml
+        - str23_yaml
+    ## List<POJO>
+    prop6:
+      - prop0: xxx
+        prop1: yyy
+      - prop0: zzz
+        prop1: qqq
+    ## Map<String,POJO>
+    prop7:
+      key3:
+        prop0: a
+        prop1: b
