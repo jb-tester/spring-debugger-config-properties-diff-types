@@ -15,7 +15,7 @@ public class AaaApplication {
     }
 
         @Bean
-            public CommandLineRunner commandLineRunner(MyProps1 myProps1) {
+            public CommandLineRunner commandLineRunner(MyProps1 myProps1, EnumMapConfigProperties enumMapConfigProperties) {
                 return args -> {
                     System.out.println("--------------------------------------");
                     for (String p2 : myProps1.getProp2()) {
@@ -36,6 +36,9 @@ public class AaaApplication {
                     for (String s : myProps1.getProp5().getProp3()) {
                         System.out.println(s);
                     }
+                    System.out.println("--------------------------------------");
+                    enumMapConfigProperties.getEnumMap().forEach((k, v) -> System.out.println((k + ":" + v)));
+                    enumMapConfigProperties.getNormalMap().forEach((k, v) -> System.out.println((k + ":" + v)));
                 };
             }
 }
