@@ -1,4 +1,11 @@
 {
+  "groups": [
+    {
+      "name": "json.only"
+
+    }
+  ],
+
   "properties": [
     {
       "name": "json.only.prop1",
