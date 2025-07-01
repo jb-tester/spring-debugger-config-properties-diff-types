@@ -31,3 +31,14 @@ custom:
       key3:
         prop0: a
         prop1: b
+value:
+  only:
+    prop1: foo_yaml
+
+json:
+  only:
+    prop1: bar_yaml
+    prop2:
+      - str1_json
+      - str2_json
+      - str3_json

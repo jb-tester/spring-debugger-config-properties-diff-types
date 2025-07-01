@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "json.only.prop1",
+      "type": "java.lang.String",
+      "description": "Description for json.only.prop1."
+    },
+    {
+      "name": "json.only.prop2",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Description for json.only.prop2."
+    }
+  ] }

@@ -1,5 +1,6 @@
 package org.example.aaa;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,6 +10,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @ConfigurationPropertiesScan
 public class AaaApplication {
+    @Value("${value.only.prop1}")
+    String prop1;
 
     public static void main(String[] args) {
         SpringApplication.run(AaaApplication.class, args);
