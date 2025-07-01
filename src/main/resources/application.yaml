@@ -42,3 +42,4 @@ json:
       - str1_json
       - str2_json
       - str3_json
+    prop3: value_yaml
